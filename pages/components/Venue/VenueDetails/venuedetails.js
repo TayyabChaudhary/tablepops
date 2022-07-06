@@ -2,7 +2,19 @@ import Head from "next/head";
 import VenueHeader from "../Header/header";
 import GridImage from "next/image";
 import Footer from "../../Footer/footer";
+import { useState } from "react";
 export default function VenueDetails() {
+
+  const [WriteNewReviewPopup, HideShowReviewPopup] = useState(false);
+
+
+  function reviewPopupHideShow() {
+    HideShowReviewPopup(true);
+  }
+
+  function ClickHideReviewPopup() {
+    HideShowReviewPopup(false);
+  }
   return (
     <>
       <Head>
@@ -210,9 +222,8 @@ export default function VenueDetails() {
                     </svg>
                   </div>
                   <input
-                    datepicker
-                    type="text"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-0 focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:placeholder-gray-400 dark:text-white"
+                    type="date"
+                    className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-0 focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 outline-none"
                     placeholder="Select Date"
                   />
                 </div>
@@ -462,13 +473,31 @@ export default function VenueDetails() {
           </div>
         </div>
 
+        {/* Review */}
+
+        {WriteNewReviewPopup &&
+        <div className="review_popup fixed top-0 right-0 left-0 bottom-0 z-50 flex justify-center items-center">
+          <div className="bg-white p-6 rounded review_box shadow-md">
+            <div className="flex flex-col">
+              <h1 className="text-4xl">Write a Review</h1>
+              <div className="pt-4">
+                <textarea
+                  className="w-full h-96 border border-solid outline-none resize-none pl-4 pt-4 rounded-md"
+                  placeholder="Please Write your Review ?"
+                ></textarea>
+                <button className="w-full py-4 rounded-md text-white mt-5" style={{backgroundColor: '#EE6C4D'}} onClick={ClickHideReviewPopup}>Write Review</button>
+              </div>
+            </div>
+          </div>
+        </div>
+}
         <div>
           <div className="flex justify-between pt-6" style={{ width: "78%" }}>
             <div>
               <h1 className="text-2xl text-blue-900 pl-6">Reviews</h1>
             </div>
             <div>
-              <button className="_savespso text-sm px-8 text-white font-bold py-3 rounded">
+              <button className="_savespso text-sm px-8 text-white font-bold py-3 rounded" onClick={reviewPopupHideShow}>
                 Write Review
               </button>
             </div>

@@ -15,11 +15,15 @@ export default function MainHeader() {
     setSignupShow(true);
     setShowMe(false);
   }
+
+  function ClosePopup() {
+    setSignupShow(false);
+  }
   return (
     <header className="w-full p-3 fixed bg-white shadow-sm z-100 Op_aoaoa max-w-full">
       <div className="flex justify-between items-center pl-8 pr-8">
         <div className="logo">
-          <Logo src={LogoImage} alt="me" width="80px" height="40px" />
+          <Logo src={LogoImage} alt="me" width="70px" height="43px" />
         </div>
         <div className="flex">
           <ul className="flex space-x-16 text-md text-black items-center">
@@ -29,7 +33,7 @@ export default function MainHeader() {
               </Link>
             </li>
             <li>
-              <a href="">Packages</a>
+              <Link href="/components/MyPackages/MyPackages">Packages</Link>
             </li>
             <li>
               <a href="">Blog</a>
@@ -308,7 +312,10 @@ export default function MainHeader() {
                       </div>
                     </div>
                     <div className="px-6 pt-4 pb-2 flex justify-center">
-                      <span className="inline-block bg-orange-600 _savespso cursor-pointer shadow-md rounded text-sm font-semibold text-white mr-2 mb-2 pl-16 p-3 pr-16">
+                      <span
+                        onClick={ClosePopup}
+                        className="inline-block bg-orange-600 _savespso cursor-pointer shadow-md rounded text-sm font-semibold text-white mr-2 mb-2 pl-16 p-3 pr-16"
+                      >
                         SIGNUP
                       </span>
                     </div>

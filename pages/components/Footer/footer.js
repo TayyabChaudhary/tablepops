@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container p-6">
         <div className="grid lg:grid-cols-5 md:grid-cols-2">
           <div className="mb-6">
-            <FooterImage src="/logo.png" alt="me" width="80px" height="40px" />
+            <FooterImage src="/logo.png" alt="me" width="70px" height="43px" />
             <div className="flex mt-3">
             <a href="#!" className="mr-6 text-gray-600">
                 <svg
@@ -147,7 +147,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/components/AboutUs/AboutUs" className="text-gray-800">
+                <a href="" className="text-gray-800">
                   Product Launch
                 </a>
               </li>
@@ -181,22 +181,22 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#!" className="text-gray-800">
+                <a href="/components/Dashboard/MyEvents/myevents" className="text-gray-800">
                   Music Festival
                 </a>
               </li>
               <li>
-                <a href="#!" className="text-gray-800">
+                <a href="/components/Dashboard/Cart/DashboardCart" className="text-gray-800">
                   Awareness Event
                 </a>
               </li>
               <li>
-                <a href="#!" className="text-gray-800">
+                <a href="/components/Dashboard/EventsPage/SectionOne/sectionOne" className="text-gray-800">
                   Non Profit Event
                 </a>
               </li>
               <li>
-                <a href="#!" className="text-gray-800">
+                <a href="" className="text-gray-800">
                   Contacts
                 </a>
               </li>

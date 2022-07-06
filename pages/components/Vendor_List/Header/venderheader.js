@@ -14,7 +14,7 @@ export default function VendorHeader() {
         <header className="w-full p-3 bg-white shadow-sm z-100">
           <div className="flex justify-between items-center pl-8 pr-8">
             <div className="logo">
-              <Logo src="/logo.png" alt="me" width="80px" height="40px" />
+              <Logo src="/logo.png" alt="me" width="70px" height="43px" />
             </div>
             <div>
               <ul className="flex space-x-10 text-sm text-gray-600 items-center">

@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[424],{8571:function(n,e,u){(window.__NEXT_P=window.__NEXT_P||[]).push(["/components/Venue/VenueDetails/VenueDetailsSecond/PackagesSection/packagesection",function(){return u(7361)}])}},function(n){n.O(0,[5675,7344,7361,9774,2888,179],(function(){return e=8571,n(n.s=e);var e}));var e=n.O();_N_E=e}]);

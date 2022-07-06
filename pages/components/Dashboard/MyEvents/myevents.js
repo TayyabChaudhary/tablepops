@@ -7,20 +7,10 @@ export default function DashboardMyEvent() {
     <>
       <Head>
         <title>My Events</title>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-          integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
-        />
       </Head>
       <DashboardHeader />
 
-      <section className="pl-12 pt-10">
+      <section className="pl-12 pt-28">
         <div>
           <h2 className="text-3xl _opaoao pl-12">My Events</h2>
         </div>
